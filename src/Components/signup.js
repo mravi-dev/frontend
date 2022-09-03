@@ -1,9 +1,11 @@
 import axios from "axios";
-import { useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./signup.css";
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     fname: "",
     lname: "",
@@ -31,9 +33,9 @@ const Signup = () => {
       password1 &&
       password1 === password2
     ) {
-      console.log(user);
       axios.post("http://localhost:8080/signup", user).then((res) => {
         alert(res.data.message);
+        navigate("/");
       });
     } else {
       alert("invalid input");
