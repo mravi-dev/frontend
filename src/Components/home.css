@@ -1,0 +1,11 @@
+.button-login,
+.button-signup {
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.test {
+  text-align: center;
+  border: none;
+}
