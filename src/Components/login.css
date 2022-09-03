@@ -1,8 +1,15 @@
-.body {
-  color: lightcyan;
+body {
+  background-color: aqua;
 }
 
 .login-form {
-  background-color: cyan;
   margin-top: 100px;
+}
+
+.login-btn {
+  text-align: center;
+}
+
+.login-body {
+  padding-top: 6%;
 }

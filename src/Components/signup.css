@@ -1,4 +1,11 @@
 .signup-form {
-  background-color: cyan;
   margin-top: 100px;
+}
+
+.signup-btn {
+  text-align: center;
+}
+
+body {
+  background-color: aqua;
 }

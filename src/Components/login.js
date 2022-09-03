@@ -27,10 +27,10 @@ const Login = () => {
 
   return (
     <div class="col-md-4 m-auto ">
-      <div class="card login-form">
-        <div class="card-body">
+      <div class="card login-form shadow p-3 mb-5 bg-white rounded">
+        <div class="card-body login-body">
           <form onSubmit={myLogin}>
-            <div class="form-group">
+            <div class="form-group ">
               <label for="exampleInputEmail1">Email address</label>
               <input
                 type="email"
@@ -53,9 +53,11 @@ const Login = () => {
               />
             </div>
             <br />
-            <button type="Submit" class="btn btn-primary">
-              Login
-            </button>
+            <div class="login-btn">
+              <button type="Submit" class="btn btn-primary ">
+                Login
+              </button>
+            </div>
           </form>
         </div>
       </div>
