@@ -6,6 +6,7 @@ import "./signup.css";
 
 const Signup = () => {
   const navigate = useNavigate();
+
   const [user, setUser] = useState({
     fname: "",
     lname: "",
