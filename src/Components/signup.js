@@ -24,7 +24,8 @@ const Signup = () => {
     });
   };
 
-  const mySignup = () => {
+  const mySignup = (e) => {
+    e.preventDefault();
     const { fname, lname, age, email, password1, password2 } = user;
     if (
       fname &&
@@ -35,6 +36,7 @@ const Signup = () => {
       password1 === password2
     ) {
       axios.post("http://localhost:8080/signup", user).then((res) => {
+        console.log(res);
         alert(res.data.message);
         navigate("/");
       });
@@ -44,16 +46,16 @@ const Signup = () => {
   };
 
   return (
-    <div class="col-md-6 m-auto ">
-      <div class="card signup-form shadow p-3 mb-5 bg-white rounded">
-        <div class="card-body">
-          <form>
-            <div class="row">
-              <div class="col">
-                <label for="fname">First Name</label>
+    <div className="col-md-6 m-auto ">
+      <div className="card signup-form shadow p-3 mb-5 bg-white rounded">
+        <div className="card-body">
+          <form onSubmit={mySignup}>
+            <div className="row">
+              <div className="col">
+                <label htmlFor="fname">First Name</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="fname"
                   placeholder="First name"
                   name="fname"
@@ -61,11 +63,11 @@ const Signup = () => {
                   onChange={handlechange}
                 />
               </div>
-              <div class="col">
-                <label for="lname">Last Name</label>
+              <div className="col">
+                <label htmlFor="lname">Last Name</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="lname"
                   placeholder="Last name"
                   name="lname"
@@ -74,12 +76,12 @@ const Signup = () => {
                 />
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <label for="age">Age</label>
+            <div className="row">
+              <div className="col">
+                <label htmlFor="age">Age</label>
                 <input
                   type="number"
-                  class="form-control"
+                  className="form-control"
                   id="age"
                   placeholder="Age"
                   name="age"
@@ -88,12 +90,12 @@ const Signup = () => {
                 />
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <label for="email">Email ID</label>
+            <div className="row">
+              <div className="col">
+                <label htmlFor="email">Email ID</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="email"
                   placeholder="Email"
                   name="email"
@@ -102,12 +104,12 @@ const Signup = () => {
                 />
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <label for="password1">Enter Password</label>
+            <div className="row">
+              <div className="col">
+                <label htmlFor="password1">Enter Password</label>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="password1"
                   placeholder="Password"
                   name="password1"
@@ -116,12 +118,12 @@ const Signup = () => {
                 />
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <label for="password2">Re-Enter Password</label>
+            <div className="row">
+              <div className="col">
+                <label htmlFor="password2">Re-Enter Password</label>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="password2"
                   placeholder="Re-Password"
                   name="password2"
@@ -131,13 +133,13 @@ const Signup = () => {
               </div>
             </div>
             <br />
-            <div class="row">
-              <div class="col signup-btn">
+            <div className="row">
+              <div className="col signup-btn">
                 <input
-                  class="btn btn-primary btn-lg"
+                  className="btn btn-primary btn-lg"
                   type="submit"
                   name="Submit"
-                  onClick={mySignup}
+                  //onClick={mySignup}
                 />
               </div>
             </div>

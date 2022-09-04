@@ -3,12 +3,12 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div class="col-md-4 m-auto ">
-      <div class="card test shadow p-3 mb-5 bg-white rounded">
-        <div class="card-body">
+    <div className="col-md-4 m-auto ">
+      <div className="card test shadow p-3 mb-5 bg-white rounded">
+        <div className="card-body">
           <a
             href="/login"
-            class="btn btn-primary btn-lg button-login"
+            className="btn btn-primary btn-lg button-login"
             role="button"
             aria-pressed="true"
           >
@@ -19,7 +19,7 @@ const Home = () => {
           <br />
           <a
             href="/signup"
-            class="btn btn-secondary btn-lg button-signup"
+            className="btn btn-secondary btn-lg button-signup"
             role="button"
             aria-pressed="true"
           >
