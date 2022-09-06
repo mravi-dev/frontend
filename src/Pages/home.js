@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./home.css";
+import "../Style/home.css";
 
 const Home = () => {
   return (

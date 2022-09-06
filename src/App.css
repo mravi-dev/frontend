@@ -24,9 +24,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* .App-link {
+  color: rgb(210, 255, 255);
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -37,7 +37,7 @@
   }
 }
 
-.row-flex {
+/* .row-flex {
   display: flex;
   flex-wrap: wrap;
 }
@@ -45,4 +45,4 @@
 .test {
   padding-bottom: 5%;
   padding-top: 5%;
-}
+} */
