@@ -9,6 +9,7 @@ import Dashboard from "./Pages/dashboard";
 import Task from "./Components/Task";
 import Users from "./Components/Users";
 import Reports from "./Components/Reports";
+import AddLineMan from "./Components/AddLineMan";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="tasks" element={<Task />} />
           <Route path="users" element={<Users />} />
           <Route path="reports" element={<Reports />} />
+          <Route path="addlineman" element={<AddLineMan />} />
         </Route>
       </Routes>
     </BrowserRouter>

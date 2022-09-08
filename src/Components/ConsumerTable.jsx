@@ -3,6 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { rows, columns } from "../Data/DefaulterData";
 
 const ConsumerTable = () => {
+
   return (
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid

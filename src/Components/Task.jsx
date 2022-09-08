@@ -1,6 +1,7 @@
 import React from "react";
 import ConsumerTable from "../Components/ConsumerTable";
 import { Button, Toolbar, Box } from "@mui/material";
+import CSVImport from "../Components/CSVImport";
 
 const Task = () => {
   return (
@@ -27,6 +28,7 @@ const Task = () => {
 
       {/* Table */}
       <ConsumerTable />
+      
 
       {/* Assign Button */}
       <Toolbar sx={{ textAlign: "right" }}>
@@ -40,6 +42,7 @@ const Task = () => {
         >
           Assign
         </Button>
+        <CSVImport />
       </Toolbar>
     </Box>
   );
